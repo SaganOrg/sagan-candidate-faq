@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <title>Sagan</title>
+  <circle cx="48" cy="48" r="43.5" fill="none" stroke="#093A3E" stroke-width="8.5"
+          stroke-dasharray="129.07 7.59" transform="rotate(52 48 48)"/>
+  <circle cx="48" cy="48" r="31.9" fill="#25A2FF"/>
+</svg>

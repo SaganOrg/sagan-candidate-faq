@@ -1,0 +1,367 @@
+/* ==========================================================================
+   Sagan Candidate FAQ
+   Built to the Sagan Passport Brand Guidelines (April 2026).
+
+   Type   : Space Grotesk (secondary brand face, OFL, self-hosted) for display
+            and labels. Body copy uses the system grotesque stack.
+            PP Mori is the primary brand face but needs a paid webfont licence
+            for public-facing use, so it is not shipped here. To switch once
+            Sagan holds that licence: drop the .woff2 files into
+            assets/fonts/, uncomment the @font-face block below, and put
+            "PP Mori" at the front of --display and --body.
+   Colour : Glacier / Dark Glacier for type, Space neutrals for surfaces,
+            Dandelion as the single expressive accent. No black.
+   Ratio  : ~45% white, ~35% neutral, ~15% secondary, ~5% Glacier.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/SpaceGrotesk-var-latin.woff2") format("woff2-variations");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Primary brand face — enable once licensed.
+@font-face {
+  font-family: "PP Mori";
+  src: url("fonts/PPMori-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Mori";
+  src: url("fonts/PPMori-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+*/
+
+:root {
+  /* Primary palette */
+  --white: #ffffff;
+  --glacier: #093a3e;
+  --dark-glacier: #062b2b;
+
+  /* Secondary palette */
+  --dandelion: #f5b800;
+  --sagan-blue: #25a2ff;
+
+  /* Neutral palette (Space) */
+  --space-100: #f5f3f0;
+  --space-200: #ede9e5;
+  --space-300: #e3ded8;
+  --space-400: #dbd7d1;
+
+  /* Derived type tones — Glacier at reduced strength, never grey */
+  --ink: var(--dark-glacier);
+  --ink-soft: #34595b;
+  --ink-muted: #5b7476;
+
+  /* Base gradient — "Subtle Transition" from the guidelines */
+  --base-from: #f5f3f0;
+  --base-to: #ffffff;
+
+  --display: "Space Grotesk", system-ui, sans-serif;
+  --label: "Space Grotesk", system-ui, sans-serif;
+  --body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+
+  --shell: 46rem;
+  --radius: 20px;
+
+  /* Very soft, diffused, no hard edges */
+  --lift: 0 1px 2px rgba(6, 43, 43, .04), 0 28px 56px -28px rgba(6, 43, 43, .16);
+
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--base-to);
+  background-image: linear-gradient(180deg, var(--base-from) 0%, var(--base-to) 46rem);
+  background-repeat: no-repeat;
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.shell {
+  width: min(var(--shell), 100% - 2.5rem);
+  margin-inline: auto;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 10;
+  padding: .625rem 1rem;
+  background: var(--glacier);
+  border-radius: 999px;
+  color: var(--white);
+  font-family: var(--label);
+  font-size: .875rem;
+  text-decoration: none;
+}
+
+/* ---------- Top bar ---------------------------------------------------- */
+
+.topbar { padding: 1.75rem 0; }
+
+.topbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.logo__mark {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: none;
+}
+
+.logo__word {
+  font-family: var(--display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -.02em;
+  color: var(--dark-glacier);
+}
+
+.topbar__label {
+  font-family: var(--label);
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+/* ---------- Hero ------------------------------------------------------- */
+
+.hero { padding: 2.5rem 0 2rem; }
+
+.eyebrow {
+  margin: 0 0 1.25rem;
+  font-family: var(--label);
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--glacier);
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.5rem, 9vw, 3.813rem);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -.035em;
+  color: var(--dark-glacier);
+}
+
+.lede {
+  max-width: 34rem;
+  margin: 1rem 0 0;
+  font-size: 1.0625rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- Notice ----------------------------------------------------- */
+
+.notice {
+  margin: 0 0 3rem;
+  padding: 1.5rem 1.625rem;
+  background: var(--space-100);
+  border-radius: var(--radius);
+}
+
+.notice__tag {
+  display: inline-block;
+  margin: 0 0 .75rem;
+  padding: .3125rem .625rem;
+  background: var(--dandelion);
+  border-radius: 999px;
+  font-family: var(--label);
+  font-size: .625rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--dark-glacier);
+}
+
+.notice__body {
+  margin: 0;
+  color: var(--glacier);
+}
+
+/* ---------- FAQ -------------------------------------------------------- */
+
+.faq__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: .875rem;
+}
+
+.faq__title {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.313rem;
+  font-weight: 600;
+  letter-spacing: -.015em;
+  color: var(--dark-glacier);
+}
+
+.toggle-all {
+  padding: 0;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--space-400);
+  cursor: pointer;
+  font-family: var(--label);
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--glacier);
+  transition: border-color .18s ease, color .18s ease;
+}
+.toggle-all:hover { border-color: var(--glacier); }
+
+.faq__list {
+  background: var(--white);
+  border: 1px solid var(--space-300);
+  border-radius: var(--radius);
+  box-shadow: var(--lift);
+  overflow: hidden;
+}
+
+details + details { border-top: 1px solid var(--space-200); }
+
+summary {
+  position: relative;
+  display: block;
+  padding: 1.375rem 3.5rem 1.375rem 1.625rem;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--display);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -.01em;
+  color: var(--dark-glacier);
+  transition: background-color .18s ease;
+}
+summary::-webkit-details-marker { display: none; }
+summary:hover { background: var(--space-100); }
+summary:focus-visible {
+  outline: 2px solid var(--glacier);
+  outline-offset: -3px;
+}
+
+/* Plus that becomes a minus */
+summary::before,
+summary::after {
+  content: "";
+  position: absolute;
+  right: 1.625rem;
+  top: 50%;
+  width: .75rem;
+  height: 1.5px;
+  background: var(--glacier);
+  border-radius: 2px;
+  transition: transform .22s cubic-bezier(.4, 0, .2, 1);
+}
+summary::after { transform: rotate(90deg); }
+details[open] > summary::after { transform: rotate(90deg) scaleX(0); }
+
+.answer {
+  padding: 0 3.5rem 1.5rem 1.625rem;
+  color: var(--ink-muted);
+}
+.answer p { margin: -.25rem 0 0; }
+
+details[open] > .answer { animation: reveal .28s cubic-bezier(.4, 0, .2, 1); }
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: none; }
+}
+
+details:target > summary { background: var(--space-100); }
+
+/* ---------- Footer ----------------------------------------------------- */
+
+.foot {
+  margin: 3rem 0 4rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--space-300);
+  font-family: var(--label);
+  font-size: .8125rem;
+  color: var(--ink-muted);
+}
+
+.foot p { margin: 0 0 .5rem; }
+.foot__legal { margin-bottom: 0; }
+
+.foot a {
+  color: var(--glacier);
+  text-decoration-color: var(--space-400);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .25em;
+  transition: text-decoration-color .18s ease;
+}
+.foot a:hover { text-decoration-color: currentColor; }
+
+/* ---------- Responsive ------------------------------------------------- */
+
+@media (max-width: 30rem) {
+  .topbar { padding: 1.25rem 0; }
+  .topbar__label { display: none; }
+  .hero { padding: 1.5rem 0 1.75rem; }
+  summary { padding: 1.125rem 3rem 1.125rem 1.25rem; font-size: 1rem; }
+  summary::before, summary::after { right: 1.25rem; }
+  .answer { padding: 0 1.75rem 1.25rem 1.25rem; }
+  .notice { padding: 1.25rem 1.25rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    transition-duration: .001ms !important;
+  }
+}
+
+/* ---------- Print ------------------------------------------------------ */
+
+@media print {
+  body { background: #fff; }
+  .topbar__label, .toggle-all, .skip { display: none; }
+  .faq__list { border-color: #ccc; box-shadow: none; }
+  summary::before, summary::after { display: none; }
+  summary { padding-right: 1.625rem; }
+  .answer { padding-right: 1.625rem; }
+  details > .answer { display: block !important; }
+}
