@@ -1,5 +1,5 @@
 SAGAN CANDIDATE FAQ
-Last updated 20 August 2026
+Last updated 17 November 2026
 
 
 PLEASE READ FIRST
@@ -12,62 +12,93 @@ forward with your application, we will contact you.
 WHAT IS THE STATUS OF MY APPLICATION?
 
 We do not provide individual status updates, timelines, or interview
-feedback. If your application moves forward, Sagan will contact you. There
-is nothing you need to do while you wait.
+feedback. If your application moves forward, Sagan will contact you by
+email. There is nothing you need to do while you wait.
 
 
 DID YOU RECEIVE MY APPLICATION, VIDEO, OR INTERVIEW?
 
-If the application or interview page showed a completion or success message,
-no further action is needed. We do not send individual confirmation emails.
+If the page showed "Your application is with Sagan" or another completion
+message, we have it and no further action is needed. We do not send
+individual confirmation emails.
+
+If you stopped part-way, your answers are saved. Use the link in our most
+recent email to continue where you left off.
 
 
 CAN I RETAKE MY AI INTERVIEW?
 
-Use the same interview link. You can complete up to three attempts.
+Yes. Open the same interview link again. You can take the interview up to
+four times for each application. After your third attempt, the page tells
+you that you can re-do it one more time.
 
 
-WHAT HAPPENS AFTER I USE ALL THREE ATTEMPTS?
+WHAT HAPPENS AFTER I USE ALL FOUR ATTEMPTS?
 
-After the third attempt, the interview cannot be opened again. Attempts are
-not restored for browser, device, connection, camera, or microphone
-problems. This inbox cannot reset or reopen attempts. If Sagan needs
-anything else, we will contact you.
+After four attempts, the interview closes for that application and cannot
+be submitted again. You can still continue the rest of your application,
+such as your video.
+
+If you believe this is an error or need special assistance, email
+recruitment@getsagan.com. If you had technical difficulties during your
+attempts, mention this in your email. These cases are reviewed
+individually.
 
 
 MY AI INTERVIEW HAD A TECHNICAL PROBLEM. WHAT SHOULD I DO?
 
 Hundreds of candidates complete Sagan's AI interview each day without
-technical problems. If yours is not working, first check your browser,
-device, internet connection, and camera and microphone permissions. Use
-another browser or device before starting your next attempt. Attempts used
-during a local technical problem cannot be restored.
+technical problems. If yours is not working, open the link in Chrome or
+Safari, not inside the Gmail, LinkedIn, or another app, where the
+microphone is often blocked. Allow microphone access, and find a quiet
+place with a stable internet connection. Try another browser or device
+before starting your next attempt.
+
+If the interview did not receive any audio from your microphone, the page
+tells you so, and no attempt is used. If you have used all four attempts,
+see "What happens after I use all four attempts?" above.
 
 
 MY VIDEO OR FILE WILL NOT UPLOAD. CAN I EMAIL IT?
 
-Try the original upload link in a different browser or on another device. Do
-not email attachments, Google Drive links, Dropbox links, or WeTransfer
+No. Try again from the link in our most recent email, in Chrome or Safari,
+or on another device. If the video is stored in Google Photos, Google
+Drive, or another cloud app, save it to your phone first and choose it
+again, or record a new one.
+
+Do not email attachments, Google Drive links, Dropbox links, or WeTransfer
 links to this inbox. They will not be added to your application.
 
 
 CAN I GET MORE TIME OR HAVE AN EXPIRED LINK REOPENED?
 
-Complete each step while its link is active. This inbox cannot grant
-extensions or reopen expired links.
+Your progress is saved, so you can come back and finish your application
+while it is open. Use the link in our most recent email.
+
+If a page says "This link is no longer active", the invitation it came from
+has expired or been replaced. If you received a newer email from Sagan, use
+the link in that one. Otherwise, there is nothing further you need to do.
+If a page says "This application is closed", that role is no longer taking
+applications.
+
+A sign-in link for your Sagan profile works for one hour, and only once. If
+it has expired, ask for a new one on the sign-in page. This inbox cannot
+grant extensions or reopen expired links.
 
 
 CAN I SEND A NEW RESUME OR CHANGE MY INFORMATION BY EMAIL?
 
-No. Use the application page or candidate profile if it allows changes. This
-inbox cannot update your resume, email address, phone number, or application
-details.
+No. Sign in to your Sagan profile at https://my.saganrecruitment.com with
+your email address. There you can update your resume, intro video, email
+address, WhatsApp number, and other details. This inbox cannot update your
+resume, email address, phone number, or application details.
 
 
 HOW DO I APPLY FOR ANOTHER SAGAN ROLE?
 
-Apply through the application page for that role. We do not accept resumes
-or job applications by email.
+Apply through the application page for that role. You are considered for
+every role you meet the requirements for, so there is no need to apply for
+the same role twice. We do not accept resumes or job applications by email.
 
 
 CAN I EMAIL SAGAN FOR MORE HELP?

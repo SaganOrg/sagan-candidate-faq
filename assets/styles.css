@@ -302,6 +302,16 @@ details[open] > summary::after { transform: rotate(90deg) scaleX(0); }
   color: var(--ink-muted);
 }
 .answer p { margin: -.25rem 0 0; }
+.answer p + p { margin-top: .75rem; }
+
+.answer a {
+  color: var(--glacier);
+  text-decoration-color: var(--space-400);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .25em;
+  transition: text-decoration-color .18s ease;
+}
+.answer a:hover { text-decoration-color: currentColor; }
 
 details[open] > .answer { animation: reveal .28s cubic-bezier(.4, 0, .2, 1); }
 
